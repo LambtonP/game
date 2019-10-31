@@ -74,6 +74,9 @@
                                     <color key="titleColor" red="0.95655220750000003" green="0.59481513500000005" blue="0.045261554420000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.95655220750000003" green="0.59481513500000005" blue="0.045261554420000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="startbutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lFa-4L-c4n"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="POINT:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8f-6I-AMV">
                                 <rect key="frame" x="45" y="750" width="54" height="21"/>

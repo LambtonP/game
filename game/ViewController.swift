@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         point.text = "point:0"
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector (updateFocusIfNeeded), userInfo: nil, repeats: true)
         showingemojies.text = stuff.randomElement()!.1
-        buttons()
+        
     }
     
     
@@ -54,6 +54,18 @@ class ViewController: UIViewController {
             choices[2].setTitle(stuff.randomElement()!.0, for: .normal)
             choices[3].setTitle(stuff.randomElement()!.0, for: .normal)
         }
+    }
+    
+    
+    @IBAction func startbutton(_ sender: UIButton) {
+        buttons()
+        if startbutton.isHidden == true{
+            startbutton.isHidden = false
+        }
+        else{
+            startbutton.isHidden = true
+        }
+        
     }
     
     
