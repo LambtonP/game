@@ -110,6 +110,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="lives" destination="6z3-iE-JJH" id="rN8-1C-GKE"/>
+                        <outlet property="point" destination="A8f-6I-AMV" id="R5J-2h-Mxy"/>
+                        <outlet property="runningtimer" destination="2De-zB-IMa" id="baA-Dd-dKF"/>
+                        <outlet property="showingemojies" destination="VSy-eO-ZnL" id="3Y6-aZ-RpV"/>
+                        <outlet property="startbutton" destination="nTr-Ef-ATv" id="xDx-Vc-Z6T"/>
                         <outletCollection property="choices" destination="qAe-QA-wpo" collectionClass="NSMutableArray" id="6y4-qg-Aw6"/>
                         <outletCollection property="choices" destination="lZz-wy-vXm" collectionClass="NSMutableArray" id="HXo-yG-V7B"/>
                         <outletCollection property="choices" destination="FAx-cq-gpm" collectionClass="NSMutableArray" id="5UJ-qB-Znd"/>
