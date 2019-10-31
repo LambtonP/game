@@ -59,14 +59,40 @@ class ViewController: UIViewController {
     
     @IBAction func startbutton(_ sender: UIButton) {
         buttons()
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector (timerdecreases), userInfo: nil, repeats: true)
+        
         if startbutton.isHidden == true{
             startbutton.isHidden = false
         }
-        else{
-            startbutton.isHidden = true
+            else{
+                startbutton.isHidden = true
+            }
+          
+    }
+        
+        
+    @objc func timerdecreases(){
+                
+            if seconds > 0{
+            seconds -= 1
+                runningtimer.text = "\(seconds)"}
+            else {
+                timer!.invalidate()
+                timer = nil
+            }
+        if seconds == 0{
+            live -= 1
+            
+            lives.text = "lives:\(live)"
         }
+//        if choices == showingemojies{
+//            point += 1
+//        }
+            
+    }
+    
         
     }
     
     
-}
+
