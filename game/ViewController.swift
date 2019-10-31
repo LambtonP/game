@@ -40,11 +40,21 @@ class ViewController: UIViewController {
         point.text = "point:0"
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector (updateFocusIfNeeded), userInfo: nil, repeats: true)
         showingemojies.text = stuff.randomElement()!.1
-        
-        
-        
+        buttons()
     }
-
-
+    
+    
+   
+    func buttons() {
+        let button = stuff.randomElement()!.0
+        if choices[0].titleLabel?.text != button
+        {
+            choices[0].setTitle(stuff.randomElement()!.0, for: .normal)
+            choices[1].setTitle(stuff.randomElement()!.0, for: .normal)
+            choices[2].setTitle(stuff.randomElement()!.0, for: .normal)
+            choices[3].setTitle(stuff.randomElement()!.0, for: .normal)
+        }
+    }
+    
+    
 }
-
